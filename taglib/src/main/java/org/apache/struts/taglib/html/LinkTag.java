@@ -443,7 +443,7 @@ public class LinkTag extends BaseHandlerTag {
 
         try {
             url = TagUtils.getInstance().computeURLWithCharEncoding(pageContext,
-                    forward, href, page, action, module, params, anchor, false,
+                    forward, href, page, action, module, params, anchor, false,false,
                     useLocalEncoding);
         } catch (MalformedURLException e) {
             TagUtils.getInstance().saveException(pageContext, e);
