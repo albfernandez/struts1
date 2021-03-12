@@ -48,11 +48,6 @@ public class TestRequestUtils extends TestMockBase {
         super(name);
     }
 
-    public static void main(String[] args) {
-        junit.awtui.TestRunner.main(new String[] {
-                TestRequestUtils.class.getName()
-            });
-    }
 
     public static Test suite() {
         return (new TestSuite(TestRequestUtils.class));

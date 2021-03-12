@@ -29,7 +29,6 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.github.albfernandez.struts</groupId>
     <artifactId>struts-core</artifactId>
     <packaging>jar</packaging>
     <name>Struts Core</name>
@@ -164,7 +163,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.8.1</version>
+            <version>4.13.1</version>
             <optional>true</optional>
         </dependency>
         <dependency>

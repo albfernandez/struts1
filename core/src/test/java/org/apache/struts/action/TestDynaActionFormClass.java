@@ -87,16 +87,7 @@ public class TestDynaActionFormClass extends TestCase {
         super(theName);
     }
 
-    /**
-     * Start the tests.
-     *
-     * @param theArgs the arguments. Not used
-     */
-    public static void main(String[] theArgs) {
-        junit.awtui.TestRunner.main(new String[] {
-                TestDynaActionFormClass.class.getName()
-            });
-    }
+
 
     /**
      * @return a test suite (<code>TestSuite</code>) that includes all methods

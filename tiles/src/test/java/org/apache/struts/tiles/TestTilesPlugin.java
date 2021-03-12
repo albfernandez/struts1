@@ -54,11 +54,6 @@ public class TestTilesPlugin extends TestMockBase {
     }
 
 
-    public static void main(String args[]) {
-        junit.awtui.TestRunner.main
-            (new String[] { TestTilesPlugin.class.getName() } );
-    }
-
 
     public static Test suite() {
         return (new TestSuite(TestTilesPlugin.class));
