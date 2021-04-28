@@ -31,19 +31,11 @@
    <packaging>pom</packaging>
    <name>Struts Apps</name>
 
-    <scm>
-       <connection>scm:svn:http://svn.apache.org/repos/asf/struts/struts1/trunk/apps/</connection>
-       <developerConnection>scm:svn:https://svn.apache.org/repos/asf/struts/struts1/trunk/apps/</developerConnection>
-       <url>http://svn.apache.org/viewcvs.cgi/struts/struts1/trunk/apps/</url>
-    </scm>
-
-   <distributionManagement>
-       <site>
-           <id>apache-site</id>
-           <url>scp://people.apache.org/www/struts.apache.org/1.x/struts-apps</url>
-       </site>
-   </distributionManagement>
-
+   	<scm>
+		<connection>scm:git:git@github.com:albfernandez/struts1.git</connection>
+		<developerConnection>scm:git:git@github.com:albfernandez/struts1.git</developerConnection>
+		<url>git@github.com:albfernandez/struts1.git</url>
+	</scm>
 
    <modules>
       <module>cookbook</module>

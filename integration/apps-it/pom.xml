@@ -32,7 +32,7 @@
    <artifactId>struts-it-apps</artifactId>
    <packaging>pom</packaging>
    <name>Struts Integration - Apps Tests</name>
-   <url>http://struts.apache.org</url>
+   <url>https://github.com/albfernandez/struts1/</url>
 
    <dependencies>
       <dependency>

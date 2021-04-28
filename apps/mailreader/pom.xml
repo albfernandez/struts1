@@ -31,11 +31,11 @@
    <packaging>war</packaging>
    <name>Struts Apps - Mailreader</name>
    
-    <scm>
-        <connection>scm:svn:http://svn.apache.org/repos/asf/struts/struts1/trunk/apps/mailreader/</connection>
-        <developerConnection>scm:svn:https://svn.apache.org/repos/asf/struts/struts1/trunk/apps/mailreader/</developerConnection>
-        <url>http://svn.apache.org/repos/asf/struts/struts1/trunk/apps/mailreader/</url>
-    </scm>
+   <scm>
+		<connection>scm:git:git@github.com:albfernandez/struts1.git</connection>
+		<developerConnection>scm:git:git@github.com:albfernandez/struts1.git</developerConnection>
+		<url>git@github.com:albfernandez/struts1.git</url>
+	</scm>
 
    <dependencies>
       <dependency>

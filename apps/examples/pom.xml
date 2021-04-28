@@ -32,10 +32,10 @@
    <name>Struts Apps - Examples</name>
    
     <scm>
-        <connection>scm:svn:http://svn.apache.org/repos/asf/struts/struts1/trunk/apps/examples/</connection>
-        <developerConnection>scm:svn:https://svn.apache.org/repos/asf/struts/struts1/trunk/apps/examples/</developerConnection>
-        <url>http://svn.apache.org/repos/asf/struts/struts1/trunk/apps/examples/</url>
-    </scm>
+		<connection>scm:git:git@github.com:albfernandez/struts1.git</connection>
+		<developerConnection>scm:git:git@github.com:albfernandez/struts1.git</developerConnection>
+		<url>git@github.com:albfernandez/struts1.git</url>
+	</scm>
 
    <dependencies>
       <dependency>

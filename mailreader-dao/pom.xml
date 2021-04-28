@@ -33,13 +33,13 @@
    <artifactId>struts-mailreader-dao</artifactId>
    <packaging>jar</packaging>
    <name>Struts Mailreader DAO</name>
-   <url>http://struts.apache.org</url>
+   <url>https://github.com/albfernandez/struts1/</url>
 
     <scm>
-        <connection>scm:svn:http://svn.apache.org/repos/asf/struts/struts1/trunk/mailreader-dao/</connection>
-        <developerConnection>scm:svn:https://svn.apache.org/repos/asf/struts/struts1/trunk/mailreader-dao/</developerConnection>
-        <url>http://svn.apache.org/repos/asf/struts/struts1/trunk/mailreader-dao/</url>
-    </scm>
+		<connection>scm:git:git@github.com:albfernandez/struts1.git</connection>
+		<developerConnection>scm:git:git@github.com:albfernandez/struts1.git</developerConnection>
+		<url>git@github.com:albfernandez/struts1.git</url>
+	</scm>
 
    <build>
       <resources>
