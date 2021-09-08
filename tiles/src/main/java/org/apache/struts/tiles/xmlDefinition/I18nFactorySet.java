@@ -470,8 +470,9 @@ public class I18nFactorySet extends FactorySet {
         XmlDefinitionsSet xmlDefinitions)
         throws DefinitionsFactoryException {
 
+    	InputStream input = null;
         try {
-            InputStream input = servletContext.getResourceAsStream(filename);
+            input = servletContext.getResourceAsStream(filename);
             // Try to load using real path.
             // This allow to load config file under websphere 3.5.x
             // Patch proposed Houston, Stephen (LIT) on 5 Apr 2002
@@ -526,6 +527,16 @@ public class I18nFactorySet extends FactorySet {
             throw new DefinitionsFactoryException(
                 "IO Error while parsing file '" + filename + "'. " + ex.getMessage(),
                 ex);
+        }
+        finally {
+        	if (input != null) {
+        		try {
+        			input.close();
+        		}
+        		catch (Exception e) {
+        			log.warn("Error closing input stream", e);
+        		}
+        	}
         }
 
         return xmlDefinitions;
