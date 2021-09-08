@@ -22,7 +22,7 @@
    <parent>
       <groupId>com.github.albfernandez.struts</groupId>
       <artifactId>struts-parent</artifactId>
-      <version>1.3.10-ayg-05</version>
+      <version>1.3.10-ayg-06-SNAPSHOT</version>
    </parent>
 
    <modelVersion>4.0.0</modelVersion>
