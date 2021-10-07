@@ -24,7 +24,7 @@
    <parent>
       <groupId>com.github.albfernandez.struts</groupId>
       <artifactId>struts-it</artifactId>
-      <version>1.3.10-ayg-06-SNAPSHOT</version>
+      <version>1.3.10-ayg-06</version>
    </parent>
 
    <modelVersion>4.0.0</modelVersion>
