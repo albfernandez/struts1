@@ -26,22 +26,22 @@ If you are using Maven, you can add Struts 1 to your project using this dependen
 	<dependency>
 		<groupId>com.github.albfernandez.struts</groupId>
 		<artifactId>struts-core</artifactId>
-		<version>1.3.10-ayg-07-SNAPSHOT</version>
+		<version>1.3.10-ayg-06</version>
 	</dependency>
 	<dependency>
 		<groupId>com.github.albfernandez.struts</groupId>
 		<artifactId>struts-el</artifactId>
-		<version>1.3.10-ayg-07-SNAPSHOT</version>
+		<version>1.3.10-ayg-06</version>
 	</dependency>
 	<dependency>
 		<groupId>com.github.albfernandez.struts</groupId>
 		<artifactId>struts-taglib</artifactId>
-		<version>1.3.10-ayg-07-SNAPSHOT</version>
+		<version>1.3.10-ayg-06</version>
 	</dependency>
 	<dependency>
 		<groupId>com.github.albfernandez.struts</groupId>
 		<artifactId>struts-tiles</artifactId>
-		<version>1.3.10-ayg-07-SNAPSHOT</version>
+		<version>1.3.10-ayg-06</version>
 	</dependency>
 ```
 
