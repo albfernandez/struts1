@@ -55,9 +55,9 @@ public class TestCVE20150899 extends TestMockBase {
      */
     public void testGetAcceptPage() {
         ActionConfig config = new ActionConfig();
-        config.setAcceptPage(new Integer(0));
+        config.setAcceptPage(Integer.valueOf(0));
         Integer acceptPage = config.getAcceptPage();
-        assertEquals(new Integer(0), acceptPage);
+        assertEquals(Integer.valueOf(0), acceptPage);
     }
 
     /**
@@ -65,9 +65,9 @@ public class TestCVE20150899 extends TestMockBase {
      */
     public void testSetAcceptPage() {
         ActionConfig config = new ActionConfig();
-        config.setAcceptPage(new Integer(0));
+        config.setAcceptPage(Integer.valueOf(0));
         Integer acceptPage = config.getAcceptPage();
-        assertEquals(new Integer(0), acceptPage);
+        assertEquals(Integer.valueOf(0), acceptPage);
     }
 
     /**
@@ -75,7 +75,7 @@ public class TestCVE20150899 extends TestMockBase {
      */
     public void testToString() {
         ActionConfig config = new ActionConfig();
-        Integer acceptPage = new Integer(0);
+        Integer acceptPage = Integer.valueOf(0);
         config.setAcceptPage(acceptPage);
         String suffix = "acceptPage=0";
         assertTrue(config.toString().endsWith(suffix));

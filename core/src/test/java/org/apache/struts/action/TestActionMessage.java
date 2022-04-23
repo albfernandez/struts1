@@ -81,8 +81,8 @@ public class TestActionMessage extends TestCase {
                 new String("stringValue4"));
         amWithArrayValues = new ActionMessage("amWithArrayValues", test_values);
         amWithTwoIntegerValues =
-            new ActionMessage("amWithTwoIntegerValues", new Integer(5),
-                new Integer(10));
+            new ActionMessage("amWithTwoIntegerValues", Integer.valueOf(5),
+            		Integer.valueOf(10));
         amNoResource = new ActionMessage("amNoResource", false);
     }
 

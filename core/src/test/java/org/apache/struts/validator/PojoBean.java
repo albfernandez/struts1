@@ -56,8 +56,8 @@ public class PojoBean {
     public PojoBean(int intValue1, int intValue2) {
         setIntValue1(intValue1);
         setIntValue2(intValue2);
-        setIntegerValue1(new Integer(intValue1));
-        setIntegerValue2(new Integer(intValue2));
+        setIntegerValue1(Integer.valueOf(intValue1));
+        setIntegerValue2(Integer.valueOf(intValue2));
     }
 
     /**

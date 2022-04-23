@@ -67,9 +67,9 @@ public ValidWhenLexer(LexerSharedInputState state) {
 	caseSensitiveLiterals = true;
 	setCaseSensitive(false);
 	literals = new Hashtable();
-	literals.put(new ANTLRHashString("null", this), new Integer(11));
-	literals.put(new ANTLRHashString("or", this), new Integer(16));
-	literals.put(new ANTLRHashString("and", this), new Integer(15));
+	literals.put(new ANTLRHashString("null", this), Integer.valueOf(11));
+	literals.put(new ANTLRHashString("or", this), Integer.valueOf(16));
+	literals.put(new ANTLRHashString("and", this), Integer.valueOf(15));
 }
 
 public Token nextToken() throws TokenStreamException {

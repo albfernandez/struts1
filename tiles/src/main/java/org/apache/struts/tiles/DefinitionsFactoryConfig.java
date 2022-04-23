@@ -221,7 +221,7 @@ public class DefinitionsFactoryConfig implements Serializable {
           map.put(DEFINITIONS_CONFIG_PARAMETER_NAME, getDefinitionConfigFiles());
           map.put(TILES_DETAILS_PARAMETER_NAME, Integer.toString(getDebugLevel()) );
           map.put(PARSER_DETAILS_PARAMETER_NAME, Integer.toString(getParserDebugLevel()) );
-          map.put(PARSER_VALIDATE_PARAMETER_NAME, new Boolean(getParserValidate()).toString() );
+          map.put(PARSER_VALIDATE_PARAMETER_NAME, Boolean.valueOf(getParserValidate()).toString() );
 
           if( ! "org.apache.struts.tiles.xmlDefinition.I18nFactorySet".equals(getFactoryClassname()) )
           map.put(FACTORY_CLASSNAME_PARAMETER_NAME, getFactoryClassname());

@@ -150,11 +150,11 @@ public class PrepareOptionsAction extends Action {
          * method and use the result.
          */
         HashMap animals = new HashMap();
-        animals.put(new Integer(1), "Cat");
-        animals.put(new Integer(2), "Dog");
-        animals.put(new Integer(3), "Horse");
-        animals.put(new Integer(4), "Rabbit");
-        animals.put(new Integer(5), "Goldfish");
+        animals.put(Integer.valueOf(1), "Cat");
+        animals.put(Integer.valueOf(2), "Dog");
+        animals.put(Integer.valueOf(3), "Horse");
+        animals.put(Integer.valueOf(4), "Rabbit");
+        animals.put(Integer.valueOf(5), "Goldfish");
         request.setAttribute("animals", animals);
 
         // Forward to form page

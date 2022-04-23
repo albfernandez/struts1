@@ -61,10 +61,10 @@ public class TagUtils {
      * Java 1.4 method if available.
      */
     static {
-        scopes.put("page", new Integer(PageContext.PAGE_SCOPE));
-        scopes.put("request", new Integer(PageContext.REQUEST_SCOPE));
-        scopes.put("session", new Integer(PageContext.SESSION_SCOPE));
-        scopes.put("application", new Integer(PageContext.APPLICATION_SCOPE));
+        scopes.put("page", Integer.valueOf(PageContext.PAGE_SCOPE));
+        scopes.put("request", Integer.valueOf(PageContext.REQUEST_SCOPE));
+        scopes.put("session", Integer.valueOf(PageContext.SESSION_SCOPE));
+        scopes.put("application", Integer.valueOf(PageContext.APPLICATION_SCOPE));
     }
 
 

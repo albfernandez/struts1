@@ -175,22 +175,22 @@ public class TestDynaActionFormClass extends TestCase {
             beanConfig.findFormPropertyConfig("booleanProperty").initial());
         assertEquals("booleanSecond value", Boolean.TRUE,
             beanConfig.findFormPropertyConfig("booleanSecond").initial());
-        assertEquals("doubleProperty value", new Double(321.0),
+        assertEquals("doubleProperty value", Double.valueOf(321.0),
             beanConfig.findFormPropertyConfig("doubleProperty").initial());
-        assertEquals("floatProperty value", new Float((float) 123.0),
+        assertEquals("floatProperty value", Float.valueOf((float) 123.0),
             beanConfig.findFormPropertyConfig("floatProperty").initial());
-        assertEquals("intProperty value", new Integer(123),
+        assertEquals("intProperty value", Integer.valueOf(123),
             beanConfig.findFormPropertyConfig("intProperty").initial());
 
         // FIXME - listIndexed
-        assertEquals("longProperty value", new Long(321),
+        assertEquals("longProperty value", Long.valueOf(321),
             beanConfig.findFormPropertyConfig("longProperty").initial());
 
         // FIXME - mappedProperty
         // FIXME - mappedIntProperty
         //        assertNull("nullProperty value",
         //                   beanConfig.findFormPropertyConfig("nullProperty").initial());
-        assertEquals("shortProperty value", new Short((short) 987),
+        assertEquals("shortProperty value", Short.valueOf((short) 987),
             beanConfig.findFormPropertyConfig("shortProperty").initial());
 
         // FIXME - stringArray
