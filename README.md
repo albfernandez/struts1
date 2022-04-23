@@ -2,7 +2,10 @@
 
 ## About
 
-This is a fork of Apache struts 1 which is EOL : [https://struts.apache.org/struts1eol-announcement.html](https://struts.apache.org/struts1eol-announcement.html)
+This is a fork of Apache struts 1 which is EOL : [https://struts.apache.org/struts1eol-announcement.html](https://struts.apache.org/struts1eol-announcement.html).
+
+Struts 1 had its last official release - version 1.3.10 - in December 2008.
+
 
 The principal effort is to patch against published vulnerabilities.
 Currently there are the fixed vulnerabilities:
@@ -26,22 +29,22 @@ If you are using Maven, you can add Struts 1 to your project using this dependen
 	<dependency>
 		<groupId>com.github.albfernandez.struts</groupId>
 		<artifactId>struts-core</artifactId>
-		<version>1.3.10-ayg-06</version>
+		<version>1.3.10-ayg-07</version>
 	</dependency>
 	<dependency>
 		<groupId>com.github.albfernandez.struts</groupId>
 		<artifactId>struts-el</artifactId>
-		<version>1.3.10-ayg-06</version>
+		<version>1.3.10-ayg-07</version>
 	</dependency>
 	<dependency>
 		<groupId>com.github.albfernandez.struts</groupId>
 		<artifactId>struts-taglib</artifactId>
-		<version>1.3.10-ayg-06</version>
+		<version>1.3.10-ayg-07</version>
 	</dependency>
 	<dependency>
 		<groupId>com.github.albfernandez.struts</groupId>
 		<artifactId>struts-tiles</artifactId>
-		<version>1.3.10-ayg-06</version>
+		<version>1.3.10-ayg-07</version>
 	</dependency>
 ```
 
