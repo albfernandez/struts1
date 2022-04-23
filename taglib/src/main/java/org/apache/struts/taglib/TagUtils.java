@@ -364,7 +364,7 @@ public class TagUtils {
         ModuleConfig moduleConfig = getModuleConfig(module, pageContext);
 
         // Calculate the appropriate URL
-        StringBuffer url = new StringBuffer();
+        StringBuilder url = new StringBuilder();
         HttpServletRequest request =
             (HttpServletRequest) pageContext.getRequest();
 
@@ -525,7 +525,7 @@ public class TagUtils {
             return (response.encodeURL(url.toString()));
         }
 
-        return (url.toString());
+        return url.toString();
     }
 
     /**
@@ -618,7 +618,7 @@ public class TagUtils {
             (HttpServletRequest) pageContext.getRequest();
 
         String contextPath = request.getContextPath();
-        StringBuffer value = new StringBuffer();
+        StringBuilder value = new StringBuilder();
 
         // Avoid setting two slashes at the beginning of an action:
         //  the length of contextPath should be more than 1
@@ -988,7 +988,7 @@ public class TagUtils {
      */
     public String pageURL(HttpServletRequest request, String page,
         ModuleConfig moduleConfig) {
-        StringBuffer sb = new StringBuffer();
+    	StringBuilder sb = new StringBuilder();
         String pagePattern =
             moduleConfig.getControllerConfig().getPagePattern();
 

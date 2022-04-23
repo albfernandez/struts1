@@ -138,7 +138,7 @@ public class MessageResourcesConfig extends BaseConfig {
      * Return a String representation of this object.
      */
     public String toString() {
-        StringBuffer sb = new StringBuffer("MessageResourcesConfig[");
+    	StringBuilder sb = new StringBuilder("MessageResourcesConfig[");
 
         sb.append("factory=");
         sb.append(this.factory);
@@ -150,6 +150,6 @@ public class MessageResourcesConfig extends BaseConfig {
         sb.append(this.parameter);
         sb.append("]");
 
-        return (sb.toString());
+        return sb.toString();
     }
 }

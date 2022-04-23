@@ -328,7 +328,7 @@ public class ControllerConfig extends BaseConfig {
      * <p> Return a String representation of this object. </p>
      */
     public String toString() {
-        StringBuffer sb = new StringBuffer("ControllerConfig[");
+    	StringBuilder sb = new StringBuilder("ControllerConfig[");
 
         sb.append("bufferSize=");
         sb.append(this.bufferSize);
@@ -378,6 +378,6 @@ public class ControllerConfig extends BaseConfig {
 
         sb.append("]");
 
-        return (sb.toString());
+        return sb.toString();
     }
 }

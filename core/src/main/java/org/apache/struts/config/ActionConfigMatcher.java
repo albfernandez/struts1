@@ -264,8 +264,8 @@ public class ActionConfigMatcher implements Serializable {
         }
 
         Map.Entry entry;
-        StringBuffer key = new StringBuffer("{0}");
-        StringBuffer ret = new StringBuffer(val);
+        StringBuilder key = new StringBuilder("{0}");
+        StringBuilder ret = new StringBuilder(val);
         String keyStr;
         int x;
 

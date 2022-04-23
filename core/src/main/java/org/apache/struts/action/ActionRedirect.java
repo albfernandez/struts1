@@ -233,7 +233,7 @@ public class ActionRedirect extends ActionForward {
         String parameterString = getParameterString();
         String anchorString = getAnchorString();
 
-        StringBuffer result = new StringBuffer(originalPath);
+        StringBuilder result = new StringBuilder(originalPath);
 
         if ((parameterString != null) && (parameterString.length() > 0)) {
             // the parameter separator we're going to use
@@ -293,7 +293,7 @@ public class ActionRedirect extends ActionForward {
      *         does not include a leading question mark (?).
      */
     public String getParameterString() {
-        StringBuffer strParam = new StringBuffer(DEFAULT_BUFFER_SIZE);
+    	StringBuilder strParam = new StringBuilder(DEFAULT_BUFFER_SIZE);
 
         // loop through all parameters
         Iterator iterator = parameterValues.keySet().iterator();
@@ -338,7 +338,7 @@ public class ActionRedirect extends ActionForward {
      *         parameters it currently holds
      */
     public String toString() {
-        StringBuffer result = new StringBuffer(DEFAULT_BUFFER_SIZE);
+    	StringBuilder result = new StringBuilder(DEFAULT_BUFFER_SIZE);
 
         result.append("ActionRedirect [");
         result.append("originalPath=").append(getOriginalPath()).append(";");

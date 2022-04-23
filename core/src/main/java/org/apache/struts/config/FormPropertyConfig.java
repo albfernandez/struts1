@@ -407,7 +407,7 @@ public class FormPropertyConfig extends BaseConfig {
      * Return a String representation of this object.
      */
     public String toString() {
-        StringBuffer sb = new StringBuffer("FormPropertyConfig[");
+    	StringBuilder sb = new StringBuilder("FormPropertyConfig[");
 
         sb.append("name=");
         sb.append(this.name);
@@ -419,6 +419,6 @@ public class FormPropertyConfig extends BaseConfig {
         sb.append(this.reset);
         sb.append("]");
 
-        return (sb.toString());
+        return sb.toString();
     }
 }

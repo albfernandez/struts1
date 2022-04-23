@@ -242,7 +242,7 @@ public class MockHttpServletRequest implements HttpServletRequest {
     }
 
     public String getRequestURI() {
-        StringBuffer sb = new StringBuffer();
+    	StringBuilder sb = new StringBuilder();
 
         if (contextPath != null) {
             sb.append(contextPath);
@@ -257,7 +257,7 @@ public class MockHttpServletRequest implements HttpServletRequest {
         }
 
         if (sb.length() > 0) {
-            return (sb.toString());
+            return sb.toString();
         }
 
         throw new UnsupportedOperationException();

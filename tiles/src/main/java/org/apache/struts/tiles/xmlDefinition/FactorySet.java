@@ -149,15 +149,13 @@ public abstract class FactorySet implements ComponentDefinitionsFactory
      * Return String representation.
      * @return String representation.
      */
-  public String toString()
-    {
-    Iterator i = factories.values().iterator();
-    StringBuffer buff = new StringBuffer( "all FactorySet's factory : \n" );
-    while( i.hasNext() )
-      {
-      buff.append( i.next().toString() ).append("\n");
-      }
-    return buff.toString();
-    }
+	public String toString() {
+		Iterator i = factories.values().iterator();
+		StringBuilder buff = new StringBuilder("all FactorySet's factory : \n");
+		while (i.hasNext()) {
+			buff.append(i.next().toString()).append("\n");
+		}
+		return buff.toString();
+	}
 
 }

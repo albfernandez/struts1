@@ -680,12 +680,12 @@ public class RequestUtils {
         if (ref == null) {
             return (file);
         } else {
-            StringBuffer sb = new StringBuffer(file);
+        	StringBuilder sb = new StringBuilder(file);
 
             sb.append('#');
             sb.append(ref);
 
-            return (sb.toString());
+            return sb.toString();
         }
     }
 
@@ -702,7 +702,7 @@ public class RequestUtils {
      */
     public static String actionURL(HttpServletRequest request,
         ActionConfig action, String pattern) {
-        StringBuffer sb = new StringBuffer();
+    	StringBuilder sb = new StringBuilder();
 
         if (pattern.endsWith("/*")) {
             sb.append(pattern.substring(0, pattern.length() - 2));
@@ -849,7 +849,7 @@ public class RequestUtils {
             }
         }
 
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
 
         // Calculate a context relative path for this ForwardConfig
         String forwardPattern =
@@ -909,7 +909,7 @@ public class RequestUtils {
             }
         }
 
-        return (sb.toString());
+        return sb.toString();
     }
 
     /**
@@ -1094,7 +1094,7 @@ public class RequestUtils {
 
         String path = actionConfig.getPath();
         String mapping = RequestUtils.getServletMapping(servlet);
-        StringBuffer actionIdPath = new StringBuffer();
+        StringBuilder actionIdPath = new StringBuilder();
 
         // Form the path based on the servlet mapping pattern
         if (mapping.startsWith("*")) {

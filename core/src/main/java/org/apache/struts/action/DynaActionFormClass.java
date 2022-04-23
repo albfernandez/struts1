@@ -178,7 +178,7 @@ public class DynaActionFormClass implements DynaClass, Serializable {
      * @return The string representation of this instance.
      */
     public String toString() {
-        StringBuffer sb = new StringBuffer("DynaActionFormBean[name=");
+    	StringBuilder sb = new StringBuilder("DynaActionFormBean[name=");
 
         sb.append(name);
 
@@ -197,7 +197,7 @@ public class DynaActionFormClass implements DynaClass, Serializable {
 
         sb.append("]");
 
-        return (sb.toString());
+        return sb.toString();
     }
 
     // --------------------------------------------------------- Static Methods

@@ -476,7 +476,7 @@ public class ForwardConfig extends BaseConfig {
      * Return a String representation of this object.
      */
     public String toString() {
-        StringBuffer sb = new StringBuffer("ForwardConfig[");
+    	StringBuilder sb = new StringBuilder("ForwardConfig[");
 
         sb.append("name=");
         sb.append(this.name);
@@ -494,6 +494,6 @@ public class ForwardConfig extends BaseConfig {
         sb.append(this.command);
         sb.append("]");
 
-        return (sb.toString());
+        return sb.toString();
     }
 }

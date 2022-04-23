@@ -96,13 +96,13 @@ public class ImageButtonBean implements Serializable {
      * Return a string representation of this object.
      */
     public String toString() {
-        StringBuffer sb = new StringBuffer("ImageButtonBean[");
+    	StringBuilder sb = new StringBuilder("ImageButtonBean[");
 
         sb.append(this.x);
         sb.append(", ");
         sb.append(this.y);
         sb.append("]");
 
-        return (sb.toString());
+        return sb.toString();
     }
 }

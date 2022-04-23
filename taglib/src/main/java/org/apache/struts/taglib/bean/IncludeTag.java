@@ -215,7 +215,7 @@ public class IncludeTag extends TagSupport {
         }
 
         // Copy the contents of this URL
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
 
         try {
             BufferedInputStream is =
@@ -263,7 +263,7 @@ public class IncludeTag extends TagSupport {
             && urlString.startsWith(request.getContextPath())
             && (request.getRequestedSessionId() != null)
             && request.isRequestedSessionIdFromCookie()) {
-            StringBuffer sb = new StringBuffer("JSESSIONID=");
+        	StringBuilder sb = new StringBuilder("JSESSIONID=");
 
             sb.append(request.getRequestedSessionId());
             conn.setRequestProperty("Cookie", sb.toString());

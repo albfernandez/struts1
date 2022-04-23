@@ -364,7 +364,7 @@ public class ConfigHelper implements ConfigHelperInterface {
      * <p> Return the form action converted into a server-relative URL. </p>
      */
     public String getActionMappingURL(String action) {
-        StringBuffer value = new StringBuffer(this.request.getContextPath());
+    	StringBuilder value = new StringBuilder(this.request.getContextPath());
 
         // Use our servlet mapping, if one is specified
         String servletMapping = getServletMapping();
@@ -403,7 +403,7 @@ public class ConfigHelper implements ConfigHelperInterface {
         }
 
         // Return the completed value
-        return (value.toString());
+        return value.toString();
     }
 
     /**
@@ -479,7 +479,7 @@ public class ConfigHelper implements ConfigHelperInterface {
             return null;
         }
 
-        StringBuffer path = new StringBuffer(this.request.getContextPath());
+        StringBuilder path = new StringBuilder(this.request.getContextPath());
 
         path.append(forward.getPath());
 
