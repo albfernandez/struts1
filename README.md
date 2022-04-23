@@ -7,7 +7,7 @@ This is a fork of Apache struts 1 which is EOL : [https://struts.apache.org/stru
 Struts 1 had its last official release - version 1.3.10 - in December 2008.
 
 
-The principal effort is to patch against published vulnerabilities.
+The main goal of this fork is to patch against published vulnerabilities.
 Currently there are the fixed vulnerabilities:
  * [CVE-2008-2025](https://nvd.nist.gov/vuln/detail/CVE-2008-2025)
  * [CVE-2012-1007](https://nvd.nist.gov/vuln/detail/CVE-2012-1007)
