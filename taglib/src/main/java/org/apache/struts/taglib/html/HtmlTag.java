@@ -31,7 +31,7 @@ import javax.servlet.jsp.tagext.TagSupport;
 import java.util.Locale;
 
 /**
- * Renders an HTML <html> element with appropriate language attributes if
+ * Renders an HTML &lt;html&gt; element with appropriate language attributes if
  * there is a current Locale available in the user's session.
  *
  * @version $Rev$ $Date: 2005-08-21 19:08:45 -0400 (Sun, 21 Aug 2005)

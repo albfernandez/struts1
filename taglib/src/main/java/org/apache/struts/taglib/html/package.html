@@ -26,11 +26,11 @@
 
 <body bgcolor="white">
 
-<p><a name="doc.Description">The "struts-html" tag library</a>
+<p><a id="doc.Description">The "struts-html" tag library</a>
     contains JSP custom tags useful in creating dynamic HTML user interfaces,
     including input forms.</p>
 
-<div align="Center">
+<div>
     <p><a href="#doc.Intro">[Introduction]</a>
         <a href="#doc.Form">[HTML Form Tags]</a>
         <a href="#doc.Other">[Other HTML Tags]</a>
@@ -39,8 +39,7 @@
 
 <hr>
 
-<h3><a name="doc.Intro">Introduction</a>
-</h3>
+<h2><a id="doc.Intro">Introduction</a></h2>
 
 <p>The tags in the Struts HTML library form a bridge between a JSP view and
     the other components of a Web application. Since a dynamic Web application
@@ -56,16 +55,14 @@
     .<br>
 </p>
 
-<div align="Center"><img src="doc-files/htmlUML.gif"
-                         alt="Tags that wrap the html tags">
+<div><img src="doc-files/htmlUML.gif"  alt="Tags that wrap the html tags">
     <br>
 </div>
 
 
 <hr>
 
-<h3><a name="doc.Form">HTML "form" tags</a>
-</h3>
+<h2><a id="doc.Form">HTML "form" tags</a></h2>
 
 <ul>
     <li>
@@ -112,8 +109,7 @@
 
 <p>Each of these tags must be nested within a &lt;html:form&gt; tag.</p>
 
-<h4><a name="doc.Form.formTag">About the form tag</a>
-</h4>
+<h3><a id="doc.Form.formTag">About the form tag</a></h3>
 
 <p>The Struts <code>form</code> tag outputs a standard HTML form tag, and
     also links the input form with a JavaBean subclassed from the Struts
@@ -169,9 +165,8 @@
     document</a>
     .</p>
 
-<hr>
-<h4><a name="doc.Form.attributes">Common Form Tag Attributes</a>
-</h4>
+<hr/>
+<h3><a id="doc.Form.attributes">Common Form Tag Attributes</a></h3>
 
 <p>The form "field" tags in the Struts-HTML tag library share a common set
     of tag attributes that have the same meaning, no matter what field tag
@@ -184,12 +179,10 @@
     , and <a href="#doc.Form.attributes.css">CSS</a>
     .</p>
 
-<h5><a name="doc.Form.attributes.struts">Struts Common</a>
-</h5>
+<h4><a id="doc.Form.attributes.struts">Struts Common</a></h4>
 
-<div align="Center">
-    <center>
-        <table width="90%" border="1" cellpadding="4">
+        <table border="1" >
+        	<caption></caption>
             <tbody>
                 <tr>
                     <td> name </td>
@@ -218,8 +211,6 @@
 
             </tbody>
         </table>
-    </center>
-</div>
 
 <p>&nbsp;</p>
 
@@ -238,12 +229,10 @@
     Developers Guide.</a>
 </p>
 
-<h5><a name="doc.Form.attributes.javascript">Javascript Event Handlers</a>
-</h5>
+<h4><a id="doc.Form.attributes.javascript">Javascript Event Handlers</a></h4>
 
-<div align="Center">
-    <center>
-        <table width="90%" border="1" cellpadding="4">
+        <table border="1">
+        	<caption></caption>
             <tbody>
                 <tr>
                     <td> onblur </td>
@@ -334,17 +323,12 @@
 
             </tbody>
         </table>
-    </center>
-</div>
 
-<h5>&nbsp;</h5>
 
-<h5><a name="doc.Form.attributes.navigation">HTML Navigation Attributes</a>
-</h5>
+<h4><a id="doc.Form.attributes.navigation">HTML Navigation Attributes</a></h4>
 
-<div align="Center">
-    <center>
-        <table width="90%" border="1" cellpadding="4">
+        <table border="1">
+        <caption></caption>
             <tbody>
                 <tr>
                     <td> accesskey </td>
@@ -361,17 +345,12 @@
 
             </tbody>
         </table>
-    </center>
-</div>
 
-<h5>&nbsp;</h5>
 
-<h5><a name="doc.Form.attributes.css">CSS Attributes</a>
-</h5>
+<h4><a id="doc.Form.attributes.css">CSS Attributes</a></h4>
 
-<div align="Center">
-    <center>
-        <table width="90%" border="1" cellpadding="4">
+        <table border="1">
+        	<caption></caption>
             <tbody>
                 <tr>
                     <td> style </td>
@@ -385,8 +364,6 @@
 
             </tbody>
         </table>
-    </center>
-</div>
 
 <p>&nbsp;</p>
 
@@ -395,18 +372,16 @@
     for detailed information about the available tags in this tag library,
     and the complete list of valid attributes for each tag.</p>
 
-<hr>
+<hr/>
 
-<h3><a name="doc.Other">Other HTML tags</a>
-</h3>
+<h2><a id="doc.Other">Other HTML tags</a></h2>
 
 <p>Aside from form processing, the Struts-HTML offers several other tags or
     tag properties to help with displaying error messages, messages,
     maintaining
     hyperlinks, and with internationalizing your application.</p>
 
-<h4><a name="doc.Other.messages">Displaying Messages</a>
-</h4>
+<h3><a id="doc.Other.messages">Displaying Messages</a></h3>
 
 <p>Message handling is an important part of any application. These messages
     can be informative messages and/or error messages for the user. Struts
@@ -481,8 +456,7 @@
     correct the following error(s) before proceeding:&lt;UL&gt;<br>
     errors.footer=&lt;/ul&gt;&lt;hr&gt;<br></pre>
 
-<h4><a name="doc.Other.errors">Displaying Error Messages</a>
-</h4>
+<h3><a id="doc.Other.errors">Displaying Error Messages</a></h3>
 
 <p>Error handling is an important part of any application, and curing an error
     often involves getting the user's help. Struts provides a generalized
@@ -547,8 +521,7 @@
     <br> You must correct the following error(s) before proceeding:&lt;UL&gt;
     <br> errors.footer=&lt;/ul&gt;&lt;hr&gt;<br></pre>
 
-<h4><a name="doc.Other.hyperlinking">Maintaining Hyperlinks</a>
-</h4>
+<h3><a id="doc.Other.hyperlinking">Maintaining Hyperlinks</a></h3>
 
 <ul>
     <li><a href="../../../../../../tagreference.html#base">base</a>
@@ -577,8 +550,7 @@
 
 <pre>  &lt;head&gt;<br> &lt;html:base/&gt;<br> &lt;/head&gt;<br></pre>
 
-<h4><a name="doc.Other.sessions">Session Tracking</a>
-</h4>
+<h3><a id="doc.Other.sessions">Session Tracking</a></h3>
 
 <p>The Java Servlet framework has built-in support for tracking a client
     through
@@ -656,8 +628,9 @@
     not used by all three tags (<code>link</code>, <code>rewrite</code>, and
     <code>img</code>), and so the tags using each attribute is given. </p>
 
-<p>&nbsp;
-    <table width="90%" border="1" cellpadding="4">
+
+    <table border="1">
+    	<caption></caption>
         <tbody>
             <tr>
                 <th colspan="2">forward, href, and page</th>
@@ -705,10 +678,11 @@
 
         </tbody>
     </table>
-</p>
 
-<p>&nbsp;
-    <table width="90%" border="1" cellpadding="4">
+
+
+    <table border="1">
+    	<caption></caption>
         <tbody>
             <tr>
                 <th colspan="2">linkName, Target , and src</th>
@@ -750,10 +724,10 @@
 
         </tbody>
     </table>
-</p>
 
-<p>&nbsp;
-    <table width="90%" border="1" cellpadding="4">
+
+    <table border="1">
+    	<caption></caption>
         <tbody>
             <tr>
                 <th colspan="2">paramId, paramName, paramProperty,
@@ -805,10 +779,11 @@
 
         </tbody>
     </table>
-</p>
 
-<p>&nbsp;
-    <table width="90%" border="1" cellpadding="4">
+
+
+    <table border="1">
+    	<caption></caption>
         <tbody>
             <tr>
                 <th colspan="2">
@@ -853,14 +828,13 @@
 
         </tbody>
     </table>
-</p>
+
 
 <p>See the <a href="../../../../../../tagreference.html">HTML Tags
     Reference</a>
     for the complete list of valid attributes for each tag.. </p>
 
-<h4><a name="doc.Other.i18n">Internationalization</a>
-</h4>
+<h3><a id="doc.Other.i18n">Internationalization</a></h3>
 
 <p>Internationalization is automatically supported by the HTML tags where
     appropriate. </p>

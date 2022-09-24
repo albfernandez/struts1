@@ -430,7 +430,7 @@ public class ConfigHelper implements ConfigHelperInterface {
     // ------------------------------------------------ Presentation API
 
     /**
-     * <p> Renders the reference for a HTML <base> element </p>
+     * <p> Renders the reference for a HTML &lt;base&gt; element </p>
      */
     public String getOrigRef() {
         // HttpServletRequest request = (HttpServletRequest)pageContext.getRequest();
@@ -445,7 +445,7 @@ public class ConfigHelper implements ConfigHelperInterface {
     }
 
     /**
-     * <p> Renders the reference for a HTML <base> element. </p>
+     * <p> Renders the reference for a HTML &lt;base&gt; element. </p>
      */
     public String getBaseRef() {
         if (request == null) {

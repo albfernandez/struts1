@@ -30,18 +30,18 @@ allow them to relate to each other in a nested nature. The fundamental
 logic of the original tags don't change, except in that all references
 to beans and bean properties will be managed in a nested context. <br>
 <br>
-<a name="doc.Description"></a>
+<a id="doc.Description"></a>
 
-<div align="Center"> [&nbsp;<a href="#doc.Intro">Introduction</a>
+<div> [&nbsp;<a href="#doc.Intro">Introduction</a>
     &nbsp;] [&nbsp;<a href="#doc.FoundationConcepts">Foundation&nbsp;Concepts&nbsp;-&nbsp;model</a>
     &nbsp;] [&nbsp;<a href="#doc.TaggingConcepts">Foundation&nbsp;Concepts&nbsp;-&nbsp;tags</a>
     &nbsp;] [&nbsp;<a href="#doc.TagList">Nested&nbsp;Tag&nbsp;List</a>
     &nbsp;] [&nbsp;<a href="#doc.PropertyProperty">The&nbsp;"property"&nbsp;Property</a>
     &nbsp;] [&nbsp;<a href="#doc.ImplementationDetails">Implementation&nbsp;Details</a>
     &nbsp;] </div>
-<hr><a name="doc.Intro"></a>
+<hr><a id="doc.Intro"></a>
 
-<h3>Introduction</h3>
+<h2>Introduction</h2>
 
 <p>The nesting extension provides the ability to define a nested object model
     and efficiently represent and manage that model through JSP's custom
@@ -58,9 +58,9 @@ to beans and bean properties will be managed in a nested context. <br>
 <p>Because of this the controller servlet excellently manages this nested
     model. These tags are about bringing such ease of management to the JSP
     view of the architecture.</p>
-<hr><a name="doc.FoundationConcepts"></a>
+<hr><a id="doc.FoundationConcepts"></a>
 
-<h3>Foundation Concepts - model.</h3>
+<h2>Foundation Concepts - model.</h2>
 
 <p> A bean holds a reference to another bean internally, and all access
     to that bean is handled through the current bean. This act of having
@@ -87,9 +87,9 @@ to beans and bean properties will be managed in a nested context. <br>
 
 <p> One special term to remember is for the most parent class, which is
     known as the "root" object which starts the hierarchy. </p>
-<hr><a name="doc.TaggingConcepts"></a>
+<hr><a id="doc.TaggingConcepts"></a>
 
-<h3>Foundation Concepts - tags.</h3>
+<h2>Foundation Concepts - tags.</h2>
 
 <p> What the tags provide is an efficient way or representing the above
     models within JSP tag markup. As a result the tags take on similar
@@ -131,16 +131,17 @@ within the objects the logic tags are evaluating.
 <p> There are also the special case of starting off the hierarchy with
     a "root" tag. These tags are what the extension requires to provide them
     with the bean by which the structure will be based on. </p>
-<hr><a name="doc.TagList"></a>
+<hr><a id="doc.TagList"></a>
 
-<h3>Nested Tag List.</h3>
+<h2>Nested Tag List.</h2>
 
 <p> Here's a list of tags in the nested extension, grouped by parent/context
     functionality. "root", "nested parent", "markup parent" &amp; "basic".
 </p>
 
-<p><b>Root Tags</b>
+<p><b>Root Tags</b></p>
     <table border="1">
+    	<caption>Root tags</caption>
         <tbody>
             <tr>
                 <th>markup name</th>
@@ -167,11 +168,12 @@ within the objects the logic tags are evaluating.
             </tr>
         </tbody>
     </table>
-</p>
+
 <br/>
 
-<p><b>Nested Parent Tags</b> (Affect the hierarchy)
+<p><b>Nested Parent Tags</b> (Affect the hierarchy)</p>
     <table border="1">
+    	<caption>Nested Parent Tags</caption>
         <tbody>
             <tr>
                 <th>markup name</th>
@@ -193,12 +195,13 @@ within the objects the logic tags are evaluating.
             </tr>
         </tbody>
     </table>
-</p>
+
 <br/>
 
 <p><b>Markup Parent Tags</b> (marked-up like parent tags, but don't affect
-    the hierarchy)
+    the hierarchy)</p>
     <table border="1">
+    	<caption>Markup Parent Tags</caption>
         <tbody>
             <tr>
                 <th>markup name</th>
@@ -260,11 +263,12 @@ within the objects the logic tags are evaluating.
             </tr>
         </tbody>
     </table>
-</p>
+
 <br/>
 
-<p><b>Basic tags</b> (usually a tag which has no body content)
+<p><b>Basic tags</b> (usually a tag which has no body content)</p>
     <table border="1">
+    	<caption>Basic Tags</caption>
         <tbody>
             <tr>
                 <th>markup name</th>
@@ -344,10 +348,10 @@ within the objects the logic tags are evaluating.
             </tr>
         </tbody>
     </table>
-</p>
-<hr><a name="doc.PropertyProperty"></a>
 
-<h3>The relative references and the "property" property.</h3>
+<hr/><a id="doc.PropertyProperty"></a>
+
+<h2>The relative references and the "property" property.</h2>
 
 <p>Use of the "property" property is exactly the same as the original Struts
     tag with minor addition. Appends the provided property to the nested
@@ -446,11 +450,10 @@ within the objects the logic tags are evaluating.
     level at the start of your hierarchy. Works just fine). </p>
 <hr><br/>
 <img src="doc-files/nestedUML.gif" alt="nested UML">
-<a name="doc.ImplementationDetails"></a>
+<a id="doc.ImplementationDetails"></a>
 
-<h3>Implementation Details.</h3>
+<h2>Implementation Details.</h2>
 <b>NestedPropertyHelper</b>
-<dir>
     <p>This class embodies all of the logic that runs the nested tagging
         system.
         It defines a static method, "setNestedProperties", which the nested
@@ -464,15 +467,11 @@ within the objects the logic tags are evaluating.
         the tag hierarchy back up to the root of the structure, these tags
         define
         the result of the current tag.</p>
-</dir>
 <b>NestedTagSupport Interface...</b>
-<dir>
     <p>This is the base of the interfaces. Simply put, any tag that we need to
         single out of the standard struts tags for use by the nesting system
         can implement this or its children.</p>
-</dir>
 <b>NestedPropertySupport Interface...</b>
-<dir>
     <p>Tags that implement this interface will have the provided property
         attribute
         appended to the parenting nested attribute. This is the heart of the
@@ -481,9 +480,7 @@ within the objects the logic tags are evaluating.
 
     <p>This is the basic property, and so far all the nested tags support this
         to have their nested properties written correctly.</p>
-</dir>
 <b>NestedNameSupport Interface...</b>
-<dir>
     <p>This interface means that the implementing tag wants to have it's name
         tag looked after by the nesting system. This is automatic, and the
         name
@@ -510,9 +507,7 @@ within the objects the logic tags are evaluating.
         couldn't
         be more efficiently provided by the current nesting model working over
         the one model. Time may prove this idea wrong.</p>
-</dir>
 <b>ParentTagSupport</b>
-<dir>
     <p>This tag identifies for the system those tags which define levels in
         the
         nested heirarchy. Namely the "getNestedProperty()" method that yields
@@ -520,10 +515,7 @@ within the objects the logic tags are evaluating.
         In the case of a NestedIterator being the parent tag, it will also
         append
         the current index reference. e.g. propertyOne.propertyTwo[5]</p>
-</dir>
 <br/>
-<br/>
-<br/>
-<br/>
+
 </body>
 </html>

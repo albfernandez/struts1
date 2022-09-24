@@ -30,17 +30,17 @@ as a tag to render a particular bean (or bean property) to the output
 response.
 <br>
 <br>
-<a name="doc.Description"></a>
+<a id="doc.Description"></a>
 
-<div align="Center"><a href="#doc.Intro">[Introduction]</a>
+<div><a href="#doc.Intro">[Introduction]</a>
     <a href="#doc.Properties">[Bean Properties]</a>
     <a href="#doc.Creation">[Bean Creation]</a>
     <a href="#doc.Output">[Bean Output]</a>
 </div>
 
-<hr>  <a name="doc.Intro"></a>
+<hr/> 
 
-<h3>Introduction</h3>
+<h2 id="doc.Intro">Introduction</h2>
 
 <p>Much of the power of JavaServer Pages (JSP) technology comes from the
     simple and powerful mechanisms by which the servlet that is generated
@@ -89,11 +89,10 @@ response.
     <img src="doc-files/beanUML.gif" alt="Bean Tag UML">
     <br>
 </p>
-<a name="doc.Properties"></a>
 
-<h3>Bean Properties</h3>
+<h2 id="doc.Properties">Bean Properties</h2>
 
-<h5>Common Tag Attributes</h5>
+<h3>Common Tag Attributes</h3>
 
 <p>The tags in the "struts-bean" tag library (and, generally, in all tag
     libraries
@@ -128,9 +127,8 @@ response.
         or created in page scope.</li>
 
 </ul>
-<a name="doc.Properties.References"></a>
 
-<h5>Property References</h5>
+<h3 id="doc.Properties.References"> Property References</h3>
 
 <p>Struts tags that support the <code>property</code> tag generally also
     recognize
@@ -211,11 +209,11 @@ response.
     access
     properties in a general way, through Java reflection APIs.</p>
 
-<hr>  <a name="doc.Creation"></a>
+<hr/> 
 
-<h3>Bean Creation</h3>
+<h2 id="doc.Creation">Bean Creation</h2>
 
-<h5>Introduction</h5>
+<h3>Introduction</h3>
 
 <p>New beans can be created, and introduced into one of the four standard
     JSP scopes (page, request, session, and application) through a variety of
@@ -231,7 +229,7 @@ response.
 
 </ul>
 
-<h5>Java Code in Action Classes</h5>
+<h3>Java Code in Action Classes</h3>
 
 <p>Because the JSP pages are compiled into Servlets, your <code>Action</code>
     classes that are invoked by the Struts controller servlet have convenient
@@ -270,7 +268,7 @@ response.
 <pre> Foo foo = ... create a Foo ...;<br>
     servlet.getServletContext().setAttribute("foo", foo);<br></pre>
 
-<h5>Java Code in Scriptlets</h5>
+<h3>Java Code in Scriptlets</h3>
 
 <p>While it is not a recommended practice in Struts-based applications
     (because
@@ -326,7 +324,7 @@ response.
     classes),
     rather than being intermixed in your JSP pages.</p>
 
-<h5>The Standard <code>&lt;jsp:useBean&gt;</code> Tag</h5>
+<h3>The Standard <code>&lt;jsp:useBean&gt;</code> Tag</h3>
 
 <p>JavaServer Pages (JSP) offers a standard tag, <code>
     &lt;jsp:useBean&gt;</code>
@@ -352,7 +350,7 @@ response.
     http://java.sun.com/products/jsp/download.html</a>
     .</p>
 
-<h5>The Struts <code>&lt;bean:define&gt;</code> Tag</h5>
+<h3>The Struts <code>&lt;bean:define&gt;</code> Tag</h3>
 
 <p>Struts provides a powerful, general purpose, tag (<code>
     &lt;bean:define&gt;</code>
@@ -401,7 +399,7 @@ response.
     <br> toScope="session"/&gt;<br> &lt;bean:define id="bop" name="user"
     property="role[3].name"/&gt;<br></pre>
 
-<h5>Other Struts Copying Tags</h5>
+<h3>Other Struts Copying Tags</h3>
 
 <p>Struts offers a variety of bean creation tags that copy existing beans
     (or bean properties) from the environment within which this page is
@@ -508,9 +506,9 @@ response.
     id="fwd" forward="success"/&gt;<br> &lt;bean:struts id="map"
     mapping="/saveCustomer"/&gt;<br></pre>
 
-<hr>  <a name="doc.Output"></a>
+<hr/> 
 
-<h3>Bean Output</h3>
+<h2 id="doc.Output">Bean Output</h2>
 
 <p>None of the Struts Bean tags discussed so far render any output to the
     response page that is being generated from this JSP page. They are

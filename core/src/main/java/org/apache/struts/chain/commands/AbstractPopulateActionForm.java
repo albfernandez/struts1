@@ -139,9 +139,9 @@ public abstract class AbstractPopulateActionForm extends ActionCommandBase {
      * @param context      The ActionContext we are processing
      * @param actionConfig The ActionConfig we are processing
      * @param actionForm   The ActionForm we are processing
-     * @throws Exception On an unexpected error
-     * @see Globals.CANCEL_PROPERTY
-     * @see Globals.CANCEL_PROPERTY_X
+     * @throws Exception On an unexpected error     * 
+     * @see Globals#CANCEL_PROPERTY
+     * @see Globals#CANCEL_PROPERTY_X
      */
     protected void handleCancel(ActionContext context,
         ActionConfig actionConfig, ActionForm actionForm)

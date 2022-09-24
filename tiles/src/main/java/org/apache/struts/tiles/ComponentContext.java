@@ -107,7 +107,7 @@ public class ComponentContext implements Serializable {
     /**
      * Get an attribute from context.
      * @param name Name of the attribute.
-     * @return <{Object}>
+     * @return attribute
      */
     public Object getAttribute(String name) {
         if (attributes == null){
@@ -119,7 +119,7 @@ public class ComponentContext implements Serializable {
 
     /**
      * Get names of all attributes.
-     * @return <{Object}>
+     * @return names of all attributes
      */
     public Iterator getAttributeNames() {
         if (attributes == null) {

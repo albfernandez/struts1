@@ -380,14 +380,17 @@ public class DynaActionForm extends ActionForm implements DynaBean {
      *
      * <p>For instance, the normal JSTL EL syntax for accessing an
      * <code>ActionForm</code> would be something like this:
+     * </p>
      * <pre>
      *  ${formbean.prop}</pre>
+     *  <p>
      * The JSTL EL syntax for accessing a <code>DynaActionForm</code> looks
      * something like this (because of the presence of this
      * <code>getMap()</code> method):
+     * </p>
      * <pre>
      *  ${dynabean.map.prop}</pre>
-     * </p>
+     * 
      *
      * @return The <code>Map</code> containing the property values.
      */

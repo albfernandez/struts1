@@ -40,13 +40,14 @@ import java.util.HashMap;
 
 /**
  * <p>Action <i>helper</i> class that dispatches to a public method in an
- * Action.</p> <p/> <p>This class is provided as an alternative mechanism to
+ * Action.</p> 
+ * <p>This class is provided as an alternative mechanism to
  * using DispatchAction and its various flavours and means <i>Dispatch</i>
  * behaviour can be easily implemented into any <code>Action</code> without
- * having to inherit from a particular super <code>Action</code>.</p> <p/>
+ * having to inherit from a particular super <code>Action</code>.</p>
  * <p>To implement <i>dispatch</i> behaviour in an <code>Action</code> class,
  * create your custom Action as follows, along with the methods you require
- * (and optionally "cancelled" and "unspecified" methods):</p> <p/>
+ * (and optionally "cancelled" and "unspecified" methods):</p>
  * <pre>
  *   public class MyCustomAction extends Action {
  *
@@ -62,7 +63,7 @@ import java.util.HashMap;
  *       }
  *   }
  * </pre>
- * <p/>
+ * 
  *
  * <p>It provides three flavours of determing the name of the method:</p>
  *
@@ -490,7 +491,7 @@ public class ActionDispatcher {
      * @param request The servlet request we are processing
      * @return <code>true</code> if the current form's cancel button was
      *         pressed; <code>false</code> otherwise.
-     * @see org.apache.struts.taglib.html.CancelTag
+     * 
      */
     protected boolean isCancelled(HttpServletRequest request) {
         return (request.getAttribute(Globals.CANCEL_KEY) != null);

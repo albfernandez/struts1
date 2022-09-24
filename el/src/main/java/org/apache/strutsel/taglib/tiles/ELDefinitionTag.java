@@ -26,13 +26,14 @@ import org.apache.strutsel.taglib.utils.EvalHelper;
 import javax.servlet.jsp.JspException;
 
 /**
- * This is the tag handler for &lt;tiles:definition&gt;, which defines a tiles
+ * <p>This is the tag handler for &lt;tiles:definition&gt;, which defines a tiles
  * (or template / component). Definition is put in requested context and can
- * be used in &lt;tiles:insert&gt. <p> This class is a subclass of the class
+ * be used in &lt;tiles:insert&gt;</p>
+ * <p> This class is a subclass of the class
  * <code>org.apache.struts.taglib.tiles.DefinitionTag</code> which provides
  * most of the described functionality.  This subclass allows all attribute
  * values to be specified as expressions utilizing the JavaServer Pages
- * Standard Library expression language.
+ * Standard Library expression language.</p>
  *
  * @version $Rev$
  */

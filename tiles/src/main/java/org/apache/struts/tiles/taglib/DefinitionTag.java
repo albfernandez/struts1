@@ -31,7 +31,7 @@ import org.apache.struts.tiles.UntypedAttribute;
 /**
  * This is the tag handler for &lt;tiles:definition&gt;, which defines
  * a tiles (or template / component). Definition is put in requested context and can be
- * used in &lt;tiles:insert&gt.
+ * used in &lt;tiles:insert&gt;
  *
  * @version $Rev$ $Date$
  */

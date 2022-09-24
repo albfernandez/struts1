@@ -41,7 +41,7 @@ import java.util.HashMap;
 
 /**
  * <p>A JavaBean representing the configuration information of a
- * <code>&lt;form-bean&gt;</code> element in a Struts configuration file.<p>
+ * <code>&lt;form-bean&gt;</code> element in a Struts configuration file.</p>
  *
  * @version $Rev$ $Date: 2006-01-17 07:26:20 -0500 (Tue, 17 Jan 2006)
  *          $

@@ -26,7 +26,7 @@ import org.apache.strutsel.taglib.utils.EvalHelper;
 import javax.servlet.jsp.JspException;
 
 /**
- * Renders an HTML <html> element with appropriate language attributes if
+ * Renders an HTML &lt;html&gt; element with appropriate language attributes if
  * there is a current Locale available in the user's session. <p> This class
  * is a subclass of the class <code>org.apache.struts.taglib.html.HtmlTag</code>
  * which provides most of the described functionality.  This subclass allows

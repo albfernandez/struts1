@@ -35,6 +35,7 @@ public final class ClassUtils {
      * qualified class name, from this web application's class loader.
      *
      * @param className Fully qualified class name
+     * @return  object for the specified fully qualified class name
      * @throws ClassNotFoundException if the specified class cannot be loaded
      */
     public static Class getApplicationClass(String className)
@@ -60,6 +61,7 @@ public final class ClassUtils {
      * class loader.</p>
      *
      * @param className Fully qualified class name
+     * @return new instance of the specified fully qualified class name
      * @throws ClassNotFoundException if the specified class cannot be loaded
      * @throws IllegalAccessException if this class is not concrete
      * @throws InstantiationException if this class has no zero-arguments

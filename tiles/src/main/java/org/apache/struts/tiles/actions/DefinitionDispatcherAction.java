@@ -45,11 +45,11 @@ import org.apache.struts.tiles.TilesUtil;
  * that is named by the request parameter whose name is specified
  * by the <code>parameter</code> property of the corresponding
  * ActionMapping.
- * This action is useful in following situations:
- * <li>
- * <ul>To associate an Url to a definition</ul>
- * <ul>To use Struts &lt;html:link&gt; tag on a definition</ul>
- * </li>
+ * This action is useful in following situations:</p>
+ * <ul>
+ * <li>To associate an Url to a definition</li>
+ * <li>To use Struts &lt;html:link&gt; tag on a definition</li>
+ * </ul>
  * <p>To configure the use of this action in your
  * <code>struts-config.xml</code> file, create an entry like this:</p>
  *

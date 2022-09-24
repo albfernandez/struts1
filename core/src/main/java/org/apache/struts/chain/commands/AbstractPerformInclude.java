@@ -67,6 +67,7 @@ public abstract class AbstractPerformInclude extends ActionCommandBase {
      *
      * @param actionContext The context for this request
      * @param include The forward to be performed
+     * @return the path to perform the include
      * @since Struts 1.3.6
      */
     protected String includePath(ActionContext actionContext, String include) {

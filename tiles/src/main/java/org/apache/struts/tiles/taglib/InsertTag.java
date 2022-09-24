@@ -549,9 +549,9 @@ public class InsertTag
      * First, search definition in the factory, then create handler from this definition.
      * @param name Name of the definition.
      * @return Appropriate TagHandler.
-     * @throws JspException- NoSuchDefinitionException No Definition  found for name.
-     * @throws JspException- FactoryNotFoundException Can't find Definitions factory.
-     * @throws JspException- DefinedComponentFactoryException General error in factory.
+     * @throws JspException NoSuchDefinitionException No Definition  found for name.
+     * @throws JspException FactoryNotFoundException Can't find Definitions factory.
+     * @throws JspException DefinedComponentFactoryException General error in factory.
      * @throws JspException InstantiationException Can't create requested controller
      */
     protected TagHandler processDefinitionName(String name)

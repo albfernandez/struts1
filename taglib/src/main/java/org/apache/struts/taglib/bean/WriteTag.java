@@ -278,9 +278,7 @@ public class WriteTag extends TagSupport {
      * as string from message resources) or to current user locale.
      *
      * When a format string is retrieved from the message resources,
-     * <code>applyLocalizedPattern</code> is used. For more about localized
-     * patterns, see
-     * <http://www.dei.unipd.it/corsi/fi2ae-docs/source/jdk1.1.7/src/java/text/resources/>.
+     * <code>applyLocalizedPattern</code> is used.
      * (To obtain the correct value for some characters, you may need to view
      * the file in a hex editor and then use the Unicode escape form in the
      * property resources file.)

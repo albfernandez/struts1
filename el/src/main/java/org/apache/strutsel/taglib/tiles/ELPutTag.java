@@ -59,7 +59,7 @@ import javax.servlet.jsp.JspException;
  * &lt;definition&gt;, role will be checked when this definition will be
  * inserted.</li>
  *
- * </li> Value can also come from tag body. Tag body is taken into account
+ * <li> Value can also come from tag body. Tag body is taken into account
  * only if value is not set by one of the tag attributes. In this case
  * Attribute type is "string", unless tag body define another type.</li>
  *

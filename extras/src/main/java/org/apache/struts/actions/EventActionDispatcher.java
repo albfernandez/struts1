@@ -77,7 +77,7 @@ import org.apache.struts.action.ActionForward;
  *
  * <p>To implement this <i>dispatch</i> behaviour in an <code>Action</code>,
  * class create your custom Action as follows, along with the methods you require
- * (and optionally "cancelled" and "unspecified" methods):</p> <p/>
+ * (and optionally "cancelled" and "unspecified" methods):</p>
  * <pre>
  *   public class MyCustomAction extends Action {
  *
@@ -92,7 +92,6 @@ import org.apache.struts.action.ActionForward;
  *       }
  *   }
  * </pre>
- * <p/>
  *
  * @since Struts 1.2.9
  */

@@ -30,7 +30,7 @@ import java.lang.reflect.InvocationTargetException;
 /**
  * <p>A JavaBean representing the configuration information of a
  * <code>&lt;form-property&gt;</code> element in a Struts configuration
- * file.<p>
+ * file.</p>
  *
  * @version $Rev$ $Date: 2005-11-12 11:52:08 -0500 (Sat, 12 Nov 2005)$
  * @since Struts 1.1

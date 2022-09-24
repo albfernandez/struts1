@@ -280,7 +280,7 @@ public class FormRenderer extends AbstractRenderer {
 
     /**
      * <p>Calculate and return the value to be specifed for the
-     * <code>action</action> attribute on the <code>&lt;form&gt;</code>
+     * <code>action</code> attribute on the <code>&lt;form&gt;</code>
      * element to be rendered.</p>
      *
      * @param context FacesContext for the current request

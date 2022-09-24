@@ -146,10 +146,8 @@ public abstract class AbstractFacesTag extends UIComponentTag {
      * @param name Attribute name
      * @param value Attribute value (or <code>null</code>)
      *
-     * @exception NumberFormatException if the value does not
+     * @throws NumberFormatException if the value does not
      *  contain a parsable integer
-     * @exception ReferenceSyntaxException if the expression has
-     *  invalid syntax
      */
     protected void setBooleanAttribute(UIComponent component,
                                        String name, String value) {
@@ -179,10 +177,8 @@ public abstract class AbstractFacesTag extends UIComponentTag {
      * @param name Attribute name
      * @param value Attribute value (or <code>null</code>)
      *
-     * @exception NumberFormatException if the value does not
+     * @throws NumberFormatException if the value does not
      *  contain a parsable integer
-     * @exception ReferenceSyntaxException if the expression has
-     *  invalid syntax
      */
     protected void setIntegerAttribute(UIComponent component,
                                        String name, String value) {
@@ -212,8 +208,6 @@ public abstract class AbstractFacesTag extends UIComponentTag {
      * @param name Attribute name
      * @param value Attribute value (or <code>null</code>)
      *
-     * @exception ReferenceSyntaxException if the expression has
-     *  invalid syntax
      */
     protected void setStringAttribute(UIComponent component,
                                       String name, String value) {

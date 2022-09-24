@@ -36,7 +36,7 @@ import java.util.Map;
  * <p> A subclass of {@link ActionForward} which is designed for use in
  * redirecting requests, with support for adding parameters at runtime. <br/>
  * An {@link ForwardConfig} (or subclass) can be passed to the constructor to
- * copy its configuration: </p> <p>
+ * copy its configuration: </p>
  * <pre>
  * public ActionForward execute(ActionMapping mapping,
  *                              ActionForm form,
@@ -51,7 +51,7 @@ import java.util.Map;
  *     return redirect;
  * }
  * </pre>
- * </p>
+ * 
  *
  * @version $Rev$ $Date$
  */

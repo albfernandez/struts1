@@ -34,34 +34,35 @@ import org.apache.struts.tiles.DirectStringAttribute;
 import org.apache.struts.tiles.PathAttribute;
 
 /**
- * Put an attribute in enclosing attribute container tag.
+ * <p>Put an attribute in enclosing attribute container tag.
  * Enclosing attribute container tag can be : &lt;insert&gt; or &lt;definition&gt;.
  * Exception is thrown if no appropriate tag can be found.
- * Put tag can have following atributes :
- * <li>
- * <ul>name : Name of the attribute</ul>
- * <ul>value | content : value to put as attribute</ul>
- * <ul>type : value type. Only valid if value is a String and is set by
+ * Put tag can have following atributes :</p>
+ * <ul>
+ * <li>name : Name of the attribute</li>
+ * <li>value | content : value to put as attribute</li>
+ * <li>type : value type. Only valid if value is a String and is set by
  * value="something" or by a bean.
  * Possible type are : string (value is used as direct string),
  * page | template (value is used as a page url to insert),
- * definition (value is used as a definition name to insert)</ul>
- * <ul>direct : Specify if value is to be used as a direct string or as a
+ * definition (value is used as a definition name to insert)</li>
+ * <li>direct : Specify if value is to be used as a direct string or as a
  * page url to insert. This is another way to specify the type. It only apply
- * if value is set as a string, and type is not present.</ul>
- * <ul>beanName : Name of a bean used for setting value. Only valid if value is not set.
+ * if value is set as a string, and type is not present.</li>
+ * <li>beanName : Name of a bean used for setting value. Only valid if value is not set.
  * If property is specified, value come from bean's property. Otherwise, bean
- * itself is used for value.</ul>
- * <ul>beanProperty : Name of the property used for retrieving value.</ul>
- * <ul>beanScope : Scope containing bean. </ul>
- * <ul>role : Role to check when 'insert' will be called. If enclosing tag is
+ * itself is used for value.</li>
+ * <li>beanProperty : Name of the property used for retrieving value.</li>
+ * <li>beanScope : Scope containing bean. </li>
+ * <li>role : Role to check when 'insert' will be called. If enclosing tag is
  * &lt;insert&gt;, role is checked immediately. If enclosing tag is
  * &lt;definition&gt;, role will be checked when this definition will be
- * inserted.</ul>
- * </li>
+ * inserted.</li>
+ * </ul>
+ * <p>
  * Value can also come from tag body. Tag body is taken into account only if
  * value is not set by one of the tag attributes. In this case Attribute type is
- * "string", unless tag body define another type.
+ * "string", unless tag body define another type.</p>
  */
 public class PutTag extends BodyTagSupport implements ComponentConstants {
 

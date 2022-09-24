@@ -186,7 +186,7 @@ public class ModuleConfigImpl extends BaseConfig implements Serializable,
     // --------------------------------------------------------- Public Methods
 
     /**
-     * </p> Has this module been completely configured yet.  Once this flag
+     * <p> Has this module been completely configured yet.  Once this flag
      * has been set, any attempt to modify the configuration will return an
      * IllegalStateException.</p>
      */
@@ -275,7 +275,7 @@ public class ModuleConfigImpl extends BaseConfig implements Serializable,
     }
 
     /**
-     * </p> Ad   d a new <code>ActionConfig</code> instance to the set
+     * <p> Ad   d a new <code>ActionConfig</code> instance to the set
      * associated with this module. </p>
      *
      * @param config The new configuration instance to be added

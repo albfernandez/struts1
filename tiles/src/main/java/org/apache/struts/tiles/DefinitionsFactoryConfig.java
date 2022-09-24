@@ -162,7 +162,7 @@ public class DefinitionsFactoryConfig implements Serializable {
 
     /**
      * Determines if the parser is validating.
-     * @return <code>true<code> when in validating mode.
+     * @return <code>true</code> when in validating mode.
      */
     public boolean getParserValidate() {
         return parserValidate;

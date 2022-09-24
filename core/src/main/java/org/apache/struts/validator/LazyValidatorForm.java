@@ -32,10 +32,10 @@ import java.util.Map;
  *
  * <p>There isn't really that much to this implementation as most of the
  * <i>lazy</i> behaviour is in <code>LazyDynaBean</code> and <i>wrapping</i>
- * the <code>LazyDynaBean<code> is handled in the parent
+ * the <code>LazyDynaBean</code> is handled in the parent
  * <code>BeanValidatorForm</code>. The only thing it really does is populate
- * <i>indexed</i> properties which are a <code>List<code> type with a
- * <code>LazyDynaBean<code> in the <code>get(name, index)</code> method.</p>
+ * <i>indexed</i> properties which are a <code>List</code> type with a
+ * <code>LazyDynaBean</code> in the <code>get(name, index)</code> method.</p>
  *
  * <p><i>Lazy</i> DynaBeans provide several types of <i>lazy</i>
  * behaviour:</p>
@@ -68,7 +68,7 @@ import java.util.Map;
  * <p>Having said that it is not necessary to pre-define properties in the
  * <code>struts-config.xml</code>, it is useful to sometimes do so for
  * <i>mapped</i> or <i>indexed</i> properties. For example, if you want to use
- * a different <code>Map<code> implementation from the default
+ * a different <code>Map</code> implementation from the default
  * <code>HashMap</code> or an array for indexed properties, rather than the
  * default <code>List</code> type:</p>
  *

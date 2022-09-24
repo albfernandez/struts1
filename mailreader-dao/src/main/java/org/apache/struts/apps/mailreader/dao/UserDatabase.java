@@ -77,7 +77,6 @@ public interface UserDatabase {
     /**
      * <p>Return true if open() has been called.</p>
      *
-     * @exception Exception if a database access error occurs
      */
     public boolean isOpen();
 

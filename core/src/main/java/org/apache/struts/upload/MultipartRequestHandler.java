@@ -49,22 +49,26 @@ public interface MultipartRequestHandler {
     /**
      * <p> Convienience method to set a reference to a working ActionServlet
      * instance. </p>
+     * @param servlet
      */
     public void setServlet(ActionServlet servlet);
 
     /**
      * <p> Convienience method to set a reference to a working ActionMapping
      * instance. </p>
+     * @param mapping
      */
     public void setMapping(ActionMapping mapping);
 
     /**
      * <p> Get the ActionServlet instance </p>
+     * @return the ActionServlet instance 
      */
     public ActionServlet getServlet();
 
     /**
      * <p> Get the ActionMapping instance for this request </p>
+     * @return the ActionMapping instance for this request 
      */
     public ActionMapping getMapping();
 

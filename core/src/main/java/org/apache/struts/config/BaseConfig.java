@@ -68,16 +68,16 @@ public abstract class BaseConfig implements Serializable {
      * config class. This facility should eliminate many use cases for
      * subclassing <code>*Config</code> classes by providing a mechanism to
      * pass any amount of arbitrary configuration information into an config
-     * class. <p /> This method must not be called after configuration is
+     * class. </p><p> This method must not be called after configuration is
      * complete, or an <code>IllegalStateException</code> will be thrown.</p>
      *
-     * <p><b>Example</b>
-     * <code><pre>
+     * <p><b>Example</b></p>
+     * <pre>
      * &lt;action path="/example" type="com.example.MyAction"&gt;
      *    &lt;set-property key="foo" property="bar" /&gt;
      * &lt;/action&gt;
-     * </pre></code>
-     * </p>
+     * </pre>
+     * 
      *
      * @param key   the key by which this value will be retrieved
      * @param value the value to store with the supplied key
@@ -117,6 +117,7 @@ public abstract class BaseConfig implements Serializable {
      * Set the entire set of properties configured for this object. At this
      * time, this only needs to be exposed to support inheritance, so choosing
      * a conservative access modifier ("protected").
+     * @param properties to be configured
      */
     protected void setProperties(Properties properties) {
         this.properties = properties;
@@ -151,6 +152,7 @@ public abstract class BaseConfig implements Serializable {
 
     /**
      * <p>Return a copy of the properties held by this object.</p>
+     * @return copy of the properties
      */
     protected Properties copyProperties() {
         Properties copy = new Properties();

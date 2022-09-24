@@ -79,7 +79,7 @@ public class ActionConfig extends BaseConfig {
 
     /**
      * <p>The path of the ActionConfig that this object should inherit
-     * properties from.</p> </p>
+     * properties from.</p>
      */
     protected String inherit = null;
 
@@ -585,9 +585,17 @@ public class ActionConfig extends BaseConfig {
         this.prefix = prefix;
     }
 
+    /**
+     * 
+     * @return
+     */
     public String getRoles() {
         return (this.roles);
     }
+    /**
+     * 
+     * @param roles
+     */
 
     public void setRoles(String roles) {
         if (configured) {
@@ -671,10 +679,18 @@ public class ActionConfig extends BaseConfig {
 
         this.suffix = suffix;
     }
+    /**
+     * 
+     * @return
+     */
 
     public String getType() {
         return (this.type);
     }
+    /**
+     * 
+     * @param type
+     */
 
     public void setType(String type) {
         if (configured) {
@@ -703,11 +719,19 @@ public class ActionConfig extends BaseConfig {
 
         this.unknown = unknown;
     }
+    /**
+     * 
+     * @return
+     */
 
     public boolean getValidate() {
         return (this.validate);
     }
 
+    /**
+     * 
+     * @param validate
+     */
     public void setValidate(boolean validate) {
         if (configured) {
             throw new IllegalStateException("Configuration is frozen");

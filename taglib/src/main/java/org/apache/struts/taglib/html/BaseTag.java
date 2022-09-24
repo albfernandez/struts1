@@ -36,7 +36,7 @@ import java.io.IOException;
 import java.util.StringTokenizer;
 
 /**
- * Renders an HTML <base> element with an href attribute pointing to the
+ * Renders an HTML &lt;base&gt; element with an href attribute pointing to the
  * absolute location of the enclosing JSP page. This tag is only valid when
  * nested inside a head tag body. The presence of this tag allows the browser
  * to resolve relative URL's to images, CSS stylesheets  and other resources

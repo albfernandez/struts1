@@ -48,6 +48,7 @@ public class ExceptionHandler {
      * already been committed.</p> <p>To use this, in your
      * <code>struts-config.xml</code> specify the exception handler like
      * this:
+     * </p>
      * <pre>
      *   &lt;exception
      *       key="GlobalExceptionHandler.default"
@@ -56,7 +57,7 @@ public class ExceptionHandler {
      *       &lt;set-property key="INCLUDE_PATH" value="/error.jsp" /&gt;
      *   &lt;/exception&gt;
      *  </pre>
-     * </p> <p>You would want to use this when your normal ExceptionHandler
+     * <p>You would want to use this when your normal ExceptionHandler
      * path is a Tiles definition or otherwise unsuitable for use in an
      * <code>include</code> context.  If you do not use this, and you do not
      * specify "SILENT_IF_COMMITTED" then the ExceptionHandler will attempt to
@@ -84,6 +85,7 @@ public class ExceptionHandler {
      *       &lt;set-property key="SILENT_IF_COMMITTED" value="true" /&gt;
      *   &lt;/exception&gt;
      *  </pre>
+     *  <p>
      * To be effective, this value must be defined to the literal String
      * "true". If it is not defined or defined to any other value, the default
      * behavior will be used. </p> <p>You only need to use this if you do not

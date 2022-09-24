@@ -28,7 +28,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.jsp.JspException;
 
 /**
- * NestedImgTag, renders the nested version of the <img> tag.
+ * NestedImgTag, renders the nested version of the &lt;img&gt; tag.
  *
  * @version $Rev$
  * @since Struts 1.1

@@ -163,10 +163,18 @@ public class ForwardConfig extends BaseConfig {
             copyMe.getModule());
     }
 
+    /**
+     * 
+     * @return
+     */
     public String getExtends() {
         return (this.inherit);
     }
 
+    /**
+     * 
+     * @param inherit
+     */
     public void setExtends(String inherit) {
         if (configured) {
             throw new IllegalStateException("Configuration is frozen");
@@ -175,14 +183,26 @@ public class ForwardConfig extends BaseConfig {
         this.inherit = inherit;
     }
 
+    /**
+     * 
+     * @return
+     */
     public boolean isExtensionProcessed() {
         return extensionProcessed;
     }
 
+    /**
+     * 
+     * @return
+     */
     public String getName() {
         return (this.name);
     }
 
+    /**
+     * 
+     * @param name
+     */
     public void setName(String name) {
         if (configured) {
             throw new IllegalStateException("Configuration is frozen");
@@ -191,9 +211,17 @@ public class ForwardConfig extends BaseConfig {
         this.name = name;
     }
 
+    /**
+     * 
+     * @return
+     */
     public String getPath() {
         return (this.path);
     }
+    /**
+     * 
+     * @param path
+     */
 
     public void setPath(String path) {
         if (configured) {
@@ -202,11 +230,19 @@ public class ForwardConfig extends BaseConfig {
 
         this.path = path;
     }
+    /**
+     * 
+     * @return
+     */
 
     public String getModule() {
         return (this.module);
     }
 
+    /**
+     * 
+     * @param module
+     */
     public void setModule(String module) {
         if (configured) {
             throw new IllegalStateException("Configuration is frozen");
@@ -215,10 +251,18 @@ public class ForwardConfig extends BaseConfig {
         this.module = module;
     }
 
+    /**
+     * 
+     * @return
+     */
     public boolean getRedirect() {
         return (this.redirect);
     }
 
+    /**
+     * 
+     * @param redirect
+     */
     public void setRedirect(boolean redirect) {
         if (configured) {
             throw new IllegalStateException("Configuration is frozen");
@@ -227,10 +271,18 @@ public class ForwardConfig extends BaseConfig {
         this.redirect = redirect;
     }
 
+    /**
+     * 
+     * @return
+     */
     public String getCommand() {
         return (this.command);
     }
 
+    /**
+     * 
+     * @param command
+     */
     public void setCommand(String command) {
         if (configured) {
             throw new IllegalStateException("Configuration is frozen");
@@ -239,10 +291,18 @@ public class ForwardConfig extends BaseConfig {
         this.command = command;
     }
 
+    /**
+     * 
+     * @return
+     */
     public String getCatalog() {
         return (this.catalog);
     }
 
+    /**
+     * 
+     * @param catalog
+     */
     public void setCatalog(String catalog) {
         if (configured) {
             throw new IllegalStateException("Configuration is frozen");

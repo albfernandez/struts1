@@ -338,13 +338,13 @@ public class CommonsMultipartRequestHandler implements MultipartRequestHandler {
     /**
      * <p> Returns the path to the temporary directory to be used for uploaded
      * files which are written to disk. The directory used is determined from
-     * the first of the following to be non-empty. <ol> <li>A temp dir
+     * the first of the following to be non-empty. </p><ol> <li>A temp dir
      * explicitly defined either using the <code>tempDir</code> servlet init
      * param, or the <code>tempDir</code> attribute of the &lt;controller&gt;
      * element in the Struts config file.</li> <li>The container-specified
      * temp dir, obtained from the <code>javax.servlet.context.tempdir</code>
      * servlet context attribute.</li> <li>The temp dir specified by the
-     * <code>java.io.tmpdir</code> system property.</li> (/ol> </p>
+     * <code>java.io.tmpdir</code> system property.</li> </ol>
      *
      * @param mc The module config instance for which the path should be
      *           determined.

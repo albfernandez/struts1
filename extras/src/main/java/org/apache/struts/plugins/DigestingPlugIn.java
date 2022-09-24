@@ -191,8 +191,7 @@ public class DigestingPlugIn implements PlugIn {
      * @param source a string indicating the lookup method to be used with
      *               <code>path</code>
      * @return a configured Digester
-     * @throws FileNotFoundException
-     * @throws MalformedURLException
+
      * @see #getConfigURL(String, String)
      */
     protected Digester digesterFromXml(String path, String source)
@@ -315,7 +314,6 @@ public class DigestingPlugIn implements PlugIn {
      *
      * @param path a Classpath-relative string identifying a resource.
      * @return a URL identifying the resource in the Servlet Context
-     * @throws MalformedURLException
      */
     protected URL getServletContextURL(String path)
         throws IOException {
@@ -327,8 +325,6 @@ public class DigestingPlugIn implements PlugIn {
      *
      * @param path a path to a file.
      * @return a URL identifying the resource in the in the file system.
-     * @throws MalformedURLException
-     * @throws FileNotFoundException
      */
     protected URL getFileURL(String path)
         throws IOException {

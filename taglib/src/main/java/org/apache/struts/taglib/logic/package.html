@@ -22,38 +22,34 @@
     conditional generation of output text, looping over object collections
     for repetitive generation of output text, and application flow management.
 </p>
-<a name="doc.Description"></a>
+<a id="doc.Description"></a>
 
 <p></p>
 
-<div align="Center"><a href="#doc.Introduction">[Introduction]</a>
+<div><a href="#doc.Introduction">[Introduction]</a>
     <a href="#doc.Functionality">[Logic Functionality]</a>
     <a href="#doc.Properties">[Logic Properties]</a>
     <a href="#doc.Examples">[Logic Examples]</a>
 </div>
 
-<p></p>
 
-<hr/=""> <a name="doc.Intro"></a>
+<a id="doc.Intro"></a>
 
-<h3>Introduction<a name="doc.Introduction"></a>
-</h3>
+<h2>Introduction<a id="doc.Introduction"></a></h2>
 
 <p> The Logic library supplies tags that are useful for manipulating
     presentation logic without the use of scriptlets.</p>
 
-<p><br>
+<p><br/>
 </p>
 
-<div align="Center"><img src="doc-files/logicUML.gif" alt="Logic Tag UML">
+<div><img src="doc-files/logicUML.gif" alt="Logic Tag UML">
     <br>
 </div>
 
 <p></p>
-<a name="doc.Functionality"></a>
 
-<h3>Logic Tag Functionality<a name="doc.Functionality"></a>
-</h3>
+<h2>Logic Tag Functionality<a id="doc.Functionality"></a></h2>
 
 <p> The functionality of the logic tags can be divided into four groups:</p>
 
@@ -108,13 +104,11 @@
 
 </ul>
 
-<h3>Logic Tag Properties<a name="doc.Properties"></a>
-</h3>
+<h2>Logic Tag Properties<a id="doc.Properties"></a></h2>
 
 <p>Each of the four groups of logic tags have a common set of attributes
     associated with them. :</p>
 
-<blockquote>
 <p><b>Value Comparisons</b> (equal, notEqual, greaterEqual, lessEqual,
     greaterThan, lessThan, present, notPresent)</p>
 
@@ -301,14 +295,10 @@
 
 </ul>
 
-<blockquote>
-    <blockquote>
         <pre>&lt;logic:iterate id="myCollectionElement" collection="&lt;%=
             vector %&gt;"&gt;<br><i> Do something with myCollectionElement</i>
             &lt;/logic:iterate&gt;
         </pre>
-    </blockquote>
-</blockquote>
 
 <ul>
     <li>length - The maximum number of entries (from the underlying
@@ -383,19 +373,15 @@
     </li>
 
 </ul>
-</blockquote>
 
-<h3>Logic Examples<a name="doc.Examples"></a></h3>
+<h2>Logic Examples<a id="doc.Examples"></a></h2>
 
-<blockquote>
 <p><b>Value Comparisons</b></p>
 
-<blockquote>
-<p><u></u><u></u><u>Logic Equivalence Tags (equal, notEqual,
+<p>Logic Equivalence Tags (equal, notEqual,
     greaterEqual,
-    lessEqual, lessThan, greaterThan)</u></p>
+    lessEqual, lessThan, greaterThan)</p>
 
-<blockquote>
     <p>You can compare these tags to the "==", "!=" ,"&gt;=",
         "&lt;=", "&lt;", and "&gt;"logic operators in most languages.
         Their usage is fairly straightforward for numbers. For an
@@ -474,12 +460,10 @@
             href="http://www.javasoft.com/products/jdk/1.2/docs/api/java/lang/String.html#compareTo%28java.lang.Object%29">
         here</a>
         .</p>
-</blockquote>
 
-<p><u>Match and Present Tags (match, notMatch, present,
-    notPresent)</u></p>
+<p>Match and Present Tags (match, notMatch, present,
+    notPresent)</p>
 
-<blockquote>
     <p>You use the match tags in conjunction with the present tags
         in order to do substring matches. For an example using this
         we'll
@@ -517,12 +501,9 @@
         would be to use the "User-Agent" header to display
         browser-specific
         javascript.</p>
-</blockquote>
-</blockquote>
 
 <p><b>Collection Utilities (iterate)</b></p>
 
-<blockquote>
     <p>For an example of using the &lt;logic:iterate&gt; tag,
         we'll use one of the previous examples given, in it's entirety.
         This
@@ -546,7 +527,5 @@
         id="myCollectionElement" name="list"&gt;<br> Element Value: &lt;bean:write
         name="myCollectionElement" /&gt;&lt;br /&gt;<br>&lt;/logic:iterate&gt;
     </pre>
-</blockquote>
-</blockquote>
 
 </body>

@@ -492,7 +492,7 @@ public class Resources {
      * @param request     The current request object.
      * @param errors      The object any errors will be stored in.
      * @param page        This in conjunction with  the page property of a
-     *                    <code>Field<code> can control the processing of
+     *                    <code>Field</code> can control the processing of
      *                    fields.  If the field's page is less than or equal
      *                    to this page value, it will be processed.
      */

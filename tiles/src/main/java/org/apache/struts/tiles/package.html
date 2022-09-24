@@ -61,8 +61,7 @@
 <p>This example inserts the specified page in place of the tag. The page attribute is any valid URL pointing to a resource inside the current site.</p>
 </div>
 <div class="subsection1">
-<a name="doc.InsertPageWithAttributes"></a>
-<h3>Insert a Tiles passing some attributes</h3>
+<h3 id="doc.InsertPageWithAttributes">Insert a Tiles passing some attributes</h3>
 <pre>
 &lt;tiles:insert page=&quot;/layouts/classicLayout.jsp&quot; flush=&amp;quot;true&quot;&gt;
   &lt;tiles:put name=&quot;title&quot;  value=&quot;Page Title&quot; /&gt;
@@ -208,9 +207,9 @@
 <li>tilesUtilImplClassname: (optional - for advanced user)
  <ul>
     <li>Specify The classname of the TilesUtil implementation to use. The specified class should
-	be a subclass of TilesUtilStrutsImpl. This option disable the moduleAware option.
-	<br>Specifying &amp;&amp;quot;TilesUtilStrutsImpl&amp;&amp;quot; is equivalent to moduleAware = false.</br>
-	<br>Specifying &amp;&amp;quot;TilesUtilStrutsModuleImpl&amp;&amp;quot; is equivalent to moduleAware = true.</br>
+	be a subclass of TilesUtilStrutsImpl. This option disable the moduleAware option.<br/>
+	Specifying &amp;&amp;quot;TilesUtilStrutsImpl&amp;&amp;quot; is equivalent to moduleAware = false.<br/>
+	Specifying &amp;&amp;quot;TilesUtilStrutsModuleImpl&amp;&amp;quot; is equivalent to moduleAware = true.<br/>
 	This option is taken into account only once, when it is first encountered. To avoid problems,
 	it is advice to specify the same values in all TilesPlugin declaration.
     </li>

@@ -173,7 +173,7 @@ public interface ActionContext extends Context {
      * <p> Get the ActionConfig which contains the details for processing this
      * request.
      *
-     * @return The ActionConfig class being used with this request </p>
+     * @return The ActionConfig class being used with this request
      */
     ActionConfig getActionConfig();
 
@@ -334,6 +334,7 @@ public interface ActionContext extends Context {
     /**
      * <p>Generate a new transaction token, to be used for enforcing a single
      * request for a particular transaction.</p>
+     * @return token
      */
     String generateToken();
 
@@ -344,6 +345,7 @@ public interface ActionContext extends Context {
      * "session" token does not match the "parameter" attribute, or the
      * session token is missing, then the transactional token is deemed
      * invalid. </p>
+     * @return
      */
     boolean isTokenValid();
 
@@ -353,6 +355,7 @@ public interface ActionContext extends Context {
      * check would return false. </p>
      *
      * @param reset On true, clear the transactional token
+     * @return
      */
     boolean isTokenValid(boolean reset);
 
@@ -375,8 +378,8 @@ public interface ActionContext extends Context {
     /**
      * <p> Indicate if the "cancel event" state is set for for this context,
      * </p>
-     *
-     * @see ActionContextBase.CANCEL_KEY
+     * @return
+     * @see ActionContextBase#CANCEL_KEY
      */
     Boolean getCancelled();
 
@@ -385,7 +388,7 @@ public interface ActionContext extends Context {
      *
      * @param cancelled On true, set the cancel event state to true. On false,
      *                  set the cancel event state to false.
-     * @see ActionContextBase.CANCEL_KEY
+     * @see ActionContextBase#CANCEL_KEY
      */
     void setCancelled(Boolean cancelled);
 
@@ -395,11 +398,13 @@ public interface ActionContext extends Context {
 
     /**
      * <p>Return the default message resources for the current module.</p>
+     * @return
      */
     MessageResources getMessageResources();
 
     /**
      * <p>Set the default message resources for the current module.</p>
+     * @param resources
      */
     void setMessageResources(MessageResources resources);
 
@@ -408,6 +413,7 @@ public interface ActionContext extends Context {
      *
      * @param key The key specified in the <code>&lt;message-resources&gt;</code>
      *            element for the requested bundle
+     * @return
      */
     MessageResources getMessageResources(String key);
 
@@ -417,6 +423,7 @@ public interface ActionContext extends Context {
 
     /**
      * <p>Return the user's currently selected Locale.</p>
+     * @return
      */
     Locale getLocale();
 

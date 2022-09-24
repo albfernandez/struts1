@@ -166,12 +166,12 @@ public interface ConfigHelperInterface {
     // ------------------------------------------------ Presentation API
 
     /**
-     * <p> Renders the reference for a HTML <base> element </p>
+     * <p> Renders the reference for a HTML &lt;base&gt; element </p>
      */
     public String getOrigRef();
 
     /**
-     * <p> Renders the reference for a HTML <base> element </p>
+     * <p> Renders the reference for a HTML &lt;base&gt; element </p>
      */
     public String getBaseRef();
 

@@ -43,13 +43,12 @@ import org.apache.struts.config.ModuleConfig;
  * is a definition name. If true, the definition is retrieved and included. If
  * false, the original URI is included or a forward is performed.
  * <p>
- * Actually, catching is done by overloading the following methods:
+ * Actually, catching is done by overloading the following methods:</p>
  * <ul>
  * <li>{@link #processForwardConfig(HttpServletRequest,HttpServletResponse,ForwardConfig)}</li>
  * <li>{@link #internalModuleRelativeForward(String, HttpServletRequest , HttpServletResponse)}</li>
  * <li>{@link #internalModuleRelativeInclude(String, HttpServletRequest , HttpServletResponse)}</li>
  * </ul>
- * </p>
  * @since Struts 1.1
  */
 public class TilesRequestProcessor extends RequestProcessor {
