@@ -20,15 +20,19 @@
  */
 package org.apache.struts.mock;
 
+import javax.el.ELContext;
 import javax.servlet.Servlet;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.PageContext;
+import javax.servlet.jsp.el.ExpressionEvaluator;
+import javax.servlet.jsp.el.VariableResolver;
 import javax.servlet.jsp.tagext.BodyContent;
 
 import java.io.IOException;
@@ -602,4 +606,27 @@ public class MockPageContext extends PageContext {
             throw new IllegalArgumentException("Invalid scope " + scope);
         }
     }
+
+	@Override
+	public void include(String relativeUrlPath, boolean flush) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public ExpressionEvaluator getExpressionEvaluator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public VariableResolver getVariableResolver() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ELContext getELContext() {
+		return null;
+	}
 }

@@ -182,4 +182,9 @@ public class MockServletContext implements ServletContext {
             attributes.put(name, value);
         }
     }
+
+	@Override
+	public String getContextPath() {
+		return null;
+	}
 }

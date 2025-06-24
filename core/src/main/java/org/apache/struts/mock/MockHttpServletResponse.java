@@ -172,4 +172,14 @@ public class MockHttpServletResponse implements HttpServletResponse {
     public void setLocale(Locale locale) {
         throw new UnsupportedOperationException();
     }
+
+	@Override
+	public String getContentType() {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public void setCharacterEncoding(String charset) {
+		throw new UnsupportedOperationException();		
+	}
 }

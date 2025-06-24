@@ -425,4 +425,25 @@ public class MockHttpServletRequest implements HttpServletRequest {
     public void setCharacterEncoding(String name) {
         throw new UnsupportedOperationException();
     }
+
+	@Override
+	public int getRemotePort() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String getLocalName() {
+		return null;
+	}
+
+	@Override
+	public String getLocalAddr() {
+		return null;
+	}
+
+	@Override
+	public int getLocalPort() {
+		return 0;
+	}
 }
